@@ -5,10 +5,9 @@
   (when (modulep! +forge)
     (package! forge :pin "a6e0a634f87154188a0fe7f1ec8bc81dd65402a4")
     (package! code-review
-      :recipe (:host github
-               :repo "doomelpa/code-review/"
+      :recipe (:repo "hw202207/code-review"
                :files ("graphql" "code-review*.el"))
-      :pin "c34ff1ee64c7ecb654635bee4e2c147b10c66297"))
+      :pin "50caf862017a2b3ddfdf69f16e082b8dd4191e5a"))
     ; HACK closql c3b34a6ec438 breaks code-review wandersoncferreira/code-review#245,
     ; and the current forge commit (but forge does have an upstream fix),
     ; pinned as a temporary measure to prevent user breakages
