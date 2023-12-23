@@ -3,7 +3,8 @@
 
 (when (package! magit :pin "48818355728c48d986d74dde8b1e9fba25f0fd53")
   (when (modulep! +forge)
-    (package! forge :pin "ba35ffc9bafc6457cc95633904e53e34e544543f")
+    (package! forge :pin "ba35ffc9bafc6457cc95633904e53e34e544543f"))
+  (when (modulep! +code-review)
     (package! code-review
       :recipe (:files ("graphql" "code-review*.el"))
       :pin "26f426e99221a1f9356aabf874513e9105b68140")

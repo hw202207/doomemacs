@@ -15,11 +15,13 @@ This module provides Magit, an interface to the Git version control system.
 - +forge ::
   Enable Forge; a porcelain for managing Github issues and PRs from within
   Emacs. Will take a while on first run to build =emacsql-sqlite=.
+- +code-review ::
+  Enable code-review; package to help you perform code reviews within Emacs.
 
 ** Packages
 - [[doom-package:evil-magit]] if [[doom-module::editor evil +everywhere]]
 - [[doom-package:forge]] if [[doom-module:+forge]]
-- [[doom-package:code-review]] if [[doom-module:+forge]]
+- [[doom-package:code-review]] if [[doom-module:+code-review]]
 - [[doom-package:magit]]
 - [[doom-package:magit-todos]]
 
@@ -42,7 +44,7 @@ This module provides Magit, an interface to the Git version control system.
 This module requires:
 - [[https://git-scm.com/][Git]]
 - [[doom-module:+forge]] requires [[https://magit.vc/manual/forge/Token-Creation.html#Token-Creation][a Github API token]]
-- [[doom-package:code-review]] will also require a token setup (see [[https://github.com/wandersoncferreira/code-review#configuration][configuration]] for your particular forge)
+- [[doom-module:+code-review]] will also require a token setup (see [[https://github.com/wandersoncferreira/code-review#configuration][configuration]] for your particular forge)
 
 * TODO Usage
 #+begin_quote
